@@ -15,3 +15,12 @@ Puppet will automatically install necessary packages:
 git clone git@github.com:r-ideas/puppet.git
 sudo puppet apply --verbose puppet/manifests/default.pp
 ```
+Configure VIM syntax highlight for ``*.pp`` source files
+--------------------------------------------------------
+Install vim [plugin](http://github.com/rodjek/vim-puppet) with ``pathogen``:
+
+```bash
+cd ~/.vim
+
+git submodule add -f git://github.com/rodjek/vim-puppet.git bundle/puppet
+```
