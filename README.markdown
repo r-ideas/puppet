@@ -7,6 +7,10 @@ wget https://apt.puppetlabs.com/puppetlabs-release-precise.deb
 sudo dpkg -i puppetlabs-release-precise.deb
 
 sudo apt-get -y install puppet
+
+sudo puppet module install acme/ohmyzsh
+
+sudo puppet module install eirc/single_user_rvm
 ```
 
 How to use
