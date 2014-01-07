@@ -31,3 +31,8 @@ cd ~/.vim
 
 git submodule add -f git://github.com/rodjek/vim-puppet.git bundle/puppet
 ```
+
+Useful links
+------------
+
+http://forge.puppetlabs.com/
