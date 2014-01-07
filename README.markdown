@@ -11,6 +11,8 @@ sudo apt-get -y install puppet
 sudo puppet module install acme/ohmyzsh
 
 sudo puppet module install eirc/single_user_rvm
+
+sudo puppet module install dcsobral/users
 ```
 
 How to use
