@@ -6,6 +6,8 @@ wget https://apt.puppetlabs.com/puppetlabs-release-precise.deb
 
 sudo dpkg -i puppetlabs-release-precise.deb
 
+sudo apt-get -y update
+
 sudo apt-get -y install puppet
 
 sudo puppet module install acme/ohmyzsh
