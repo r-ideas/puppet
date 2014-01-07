@@ -9,8 +9,8 @@ sudo dpkg -i puppetlabs-release-precise.deb
 sudo apt-get -y install puppet
 ```
 
-Installation
-------------
+How to use
+----------
 
 Puppet will automatically install necessary packages:
 
