@@ -1,15 +1,15 @@
 Exec { path => ['/bin/', '/sbin/', '/usr/bin', '/usr/sbin/' ]}
 
-group { 'deployer':
-  ensure => 'present'
+exec { 'update-system':
+  command => 'apt-get update'
 }
-user { 'deployer':
-  ensure => 'present',
-  home => '/home/deployer',
-  name => 'deployer',
-  shell => '/bin/bash',
-  managehome => true,
-  groups => 'deployer',
+
+@users::useraccount { 'deployer':
+    ensure   => present,
+    fullname => 'deployer',
+    uid      => 1000,
+    shell    => '/bin/zsh',
+    password => 'deployer',
 }
 
 package { 'git':
@@ -71,3 +71,9 @@ package { 'libpq-dev':
   name => 'libpq-dev',
   ensure => 'present'
 }
+
+class { 'ohmyzsh': }
+ohmyzsh::install { 'deployer': }
+
+single_user_rvm::install { 'deployer': }
+single_user_rvm::install_ruby { 'ruby-1.9.3-p392': user => 'deployer' }
