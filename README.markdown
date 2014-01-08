@@ -10,11 +10,11 @@ sudo apt-get -y update
 
 sudo apt-get -y install puppet
 
-sudo puppet module install acme/ohmyzsh
-
 sudo puppet module install maestrodev/rvm
 
 sudo puppet module install dcsobral/users
+
+sudo puppet module install kbatra/nginx_passenger
 ```
 
 How to use
