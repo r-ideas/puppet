@@ -17,6 +17,8 @@ sudo puppet module install dcsobral/users
 sudo puppet module install kbatra/nginx_passenger
 
 sudo puppet module install puppetlabs/postgresql
+
+sudo puppet module install fsalum/redis
 ```
 
 How to use
