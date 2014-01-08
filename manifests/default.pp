@@ -35,16 +35,6 @@ package { 'zsh':
   ensure => 'present'
 }
 
-package { 'postgresql':
-  name => 'postgresql',
-  ensure => 'present'
-}
-
-package { 'libpq-dev':
-  name => 'libpq-dev',
-  ensure => 'present'
-}
-
 group { 'deployer':
   ensure => 'present'
 }
@@ -63,3 +53,7 @@ class { 'nginx_passenger':
 }
 
 rvm::system_user { 'deployer': }
+
+class { 'postgresql::server': }
+
+class { 'redis': }
