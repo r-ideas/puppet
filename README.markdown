@@ -15,6 +15,8 @@ sudo puppet module install maestrodev/rvm
 sudo puppet module install dcsobral/users
 
 sudo puppet module install kbatra/nginx_passenger
+
+sudo puppet module install puppetlabs/postgresql
 ```
 
 How to use
