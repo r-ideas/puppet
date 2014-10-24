@@ -49,7 +49,7 @@ user { 'deployer':
 }
 
 class { 'nginx_passenger':
-  ruby_version => 'ruby-1.9.3-p392',
+  ruby_version => 'ruby-2.0.0',
 }
 
 rvm::system_user { 'deployer': }
