@@ -19,6 +19,8 @@ sudo puppet module install kbatra/nginx_passenger
 sudo puppet module install puppetlabs/postgresql
 
 sudo puppet module install fsalum/redis
+
+sudo apt-get -y install git
 ```
 
 How to use
@@ -27,7 +29,7 @@ How to use
 Puppet will automatically install necessary packages:
 
 ```bash
-git clone git@github.com:r-ideas/puppet.git
+git clone https://github.com/r-ideas/puppet.git
 sudo puppet apply --verbose puppet/manifests/default.pp
 ```
 Configure VIM syntax highlight for ``*.pp`` source files
