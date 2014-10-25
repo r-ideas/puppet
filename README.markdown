@@ -3,7 +3,7 @@ How to use
 Install puppet with command:
 
 ```bash
-\curl -sSL https://raw.githubusercontent.com/r-ideas/puppet/master/init.sh | bash
+\curl -sSL https://raw.githubusercontent.com/r-ideas/puppet/master/init.sh | bash - 
 ```
 
 Configure VIM syntax highlight for ``*.pp`` source files
